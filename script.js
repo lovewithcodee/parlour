@@ -1,4 +1,4 @@
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyEmb84DFnep6a4vyBjhTESrjXAktWGyddS00pkFZ9PS4y_p3Y6ayts-pS_kdOH_LRV/exec"; 
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzRLTYynv1uUFO5kW-dJdsd283X8B8gcdZdR5eQmg5SeyjDciqXqRe_yK2pS39U3Rkg/exec"; 
 let allImages = [];
 let isAdmin = false;
 
