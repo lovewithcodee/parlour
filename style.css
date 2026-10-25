@@ -1,0 +1,58 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+body { background-color: #fff8f8; color: #333; line-height: 1.6; }
+
+/* Header & Nav */
+header { display: flex; justify-content: space-between; align-items: center; padding: 15px 5%; background-color: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+.logo { font-size: 24px; font-weight: bold; color: #e91e63; }
+nav ul { display: flex; list-style: none; gap: 20px; }
+nav ul li a { text-decoration: none; color: #444; font-weight: 600; }
+nav ul li a:hover { color: #e91e63; }
+.nav-btn { padding: 8px 18px; background-color: #e91e63; color: white; border-radius: 20px; text-decoration: none; font-weight: bold; }
+
+/* Banner */
+.hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1560066984-1388b4c3e67c?auto=format&fit=crop&w=1350&q=80') center/cover; height: 70vh; color: #fff; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px; }
+.hero h1 { font-size: 40px; margin-bottom: 10px; }
+.banner-offer { background: #ff4081; padding: 6px 15px; border-radius: 5px; font-weight: bold; margin-bottom: 20px; }
+
+/* Section Global */
+.section-padding { padding: 50px 5%; }
+.heading { text-align: center; color: #e91e63; margin-bottom: 30px; font-size: 32px; }
+
+/* Booking */
+.booking-container { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; }
+.booking-form, .direct-booking { background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); flex: 1; min-width: 300px; max-width: 500px; }
+.input-group { margin-bottom: 15px; }
+.input-group label { display: block; margin-bottom: 5px; font-weight: 600; }
+.input-group input, .input-group select { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+.btn-submit { width: 100%; padding: 12px; background: #e91e63; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer; font-weight: bold; }
+.btn-whatsapp { background: #25D366; color: white; width: 100%; padding: 12px; display: block; text-align: center; border-radius: 5px; text-decoration: none; font-weight: bold; margin-bottom: 15px; }
+.btn-call { background: #007bff; color: white; width: 100%; padding: 12px; display: block; text-align: center; border-radius: 5px; text-decoration: none; font-weight: bold; }
+
+/* Services */
+.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+.service-card { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #e91e63; }
+.service-card h3 { color: #e91e63; margin-bottom: 15px; }
+.service-item { display: flex; justify-content: space-between; margin-bottom: 8px; border-bottom: 1px dashed #eee; padding-bottom: 5px; font-size: 14px; }
+
+/* Gallery Filter Buttons */
+.gallery-filters { display: flex; justify-content: center; gap: 10px; margin-bottom: 25px; flex-wrap: wrap; }
+.filter-btn { padding: 8px 18px; border: 1px solid #e91e63; background: #fff; color: #e91e63; border-radius: 20px; cursor: pointer; font-weight: 600; }
+.filter-btn.active, .filter-btn:hover { background: #e91e63; color: #fff; }
+
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; }
+.gallery-item { height: 220px; border-radius: 8px; overflow: hidden; position: relative; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; }
+.gallery-item .item-title { position: absolute; bottom: 0; background: rgba(0,0,0,0.6); color: #fff; width: 100%; padding: 5px 10px; font-size: 13px; text-align: center; }
+
+/* Admin Controls */
+.admin-controls { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); margin-bottom: 25px; border: 2px dashed #e91e63; }
+
+/* Footer */
+footer { background: #222; color: #fff; padding: 40px 5% 20px 5%; }
+.footer-content { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 30px; }
+.footer-section h3 { color: #e91e63; margin-bottom: 15px; }
+
+@media (max-width: 768px) {
+    nav ul { display: none; }
+    .hero h1 { font-size: 28px; }
+}

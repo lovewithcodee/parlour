@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ग्लैम और ग्लो - ब्यूटी पार्लर</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">ग्लैम और ग्लो</div>
+        <nav>
+            <ul>
+                <li><a href="#home">होम</a></li>
+                <li><a href="#booking">बुकिंग</a></li>
+                <li><a href="#services">सर्विसेज</a></li>
+                <li><a href="#gallery">गैलरी</a></li>
+                <li><a href="#contact">संपर्क</a></li>
+            </ul>
+        </nav>
+        <a href="#booking" class="nav-btn">Book Now</a>
+    </header>
+
+    <!-- Banner -->
+    <section class="hero" id="home">
+        <div class="banner-offer">✨ स्पेशल ब्राइडल पैकेज पर 20% की छूट! ✨</div>
+        <h1>आपकी खूबसूरती, हमारी पहचान</h1>
+        <p>प्रीमियम ब्यूटी, स्किन व हेयर केयर सर्विसेज</p>
+        <a href="#booking" class="nav-btn" style="padding: 12px 30px; font-size: 18px; margin-top: 15px; display:inline-block;">अभी अपॉइंटमेंट बुक करें</a>
+    </section>
+
+    <!-- Booking -->
+    <section class="section-padding" id="booking">
+        <h2 class="heading">ऑनलाइन अपॉइंटमेंट बुकिंग</h2>
+        <div class="booking-container">
+            <div class="booking-form">
+                <form id="appointmentForm" onsubmit="submitAppointment(event)">
+                    <div class="input-group">
+                        <label>नाम</label>
+                        <input type="text" id="custName" required placeholder="अपना पूरा नाम लिखें">
+                    </div>
+                    <div class="input-group">
+                        <label>मोबाइल नंबर</label>
+                        <input type="tel" id="custPhone" required placeholder="10 अंकों का नंबर">
+                    </div>
+                    <div class="input-group">
+                        <label>सर्विस चुनें</label>
+                        <select id="custService">
+                            <option>हेयर कटिंग / स्टाइलिंग</option>
+                            <option>फेशियल व ब्लीच</option>
+                            <option>ब्राइडल / पार्टी मेकअप</option>
+                            <option>मैनिकेयर / पेडीक्योर</option>
+                            <option>वैक्सिंग व थ्रेडिंग</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label>ब्यूटीशियन / स्टाफ</label>
+                        <select id="custBeautician">
+                            <option value="Any Available">कोई भी उपलब्ध स्टाफ</option>
+                            <option value="Priya (Hair Expert)">प्रिया (हेयर एक्सपर्ट)</option>
+                            <option value="Anjali (Makeup Artist)">अंजलि (मेकअप आर्टिस्ट)</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label>तारीख</label>
+                        <input type="date" id="custDate" required>
+                    </div>
+                    <div class="input-group">
+                        <label>समय स्लॉट</label>
+                        <select id="custTime">
+                            <option>10:00 AM - 11:30 AM</option>
+                            <option>12:00 PM - 01:30 PM</option>
+                            <option>03:00 PM - 04:30 PM</option>
+                            <option>05:00 PM - 06:30 PM</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-submit" id="bookBtn">कन्फर्म करें</button>
+                </form>
+            </div>
+
+            <div class="direct-booking">
+                <h3>डायरेक्ट बुकिंग</h3>
+                <p style="margin: 15px 0;">व्हाट्सएप या कॉल के माध्यम से तुरंत बुकिंग करें:</p>
+                <a href="https://wa.me/917607041762?text=नमस्ते,%20मुझे%20पार्लर%20अपॉइंटमेंट%20बुक%20करना%20है।" target="_blank" class="btn-whatsapp">📲 Book via WhatsApp</a>
+                <a href="tel:+917607041762" class="btn-call">📞 Call Now (+91 7607041762)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section-padding" id="services" style="background: #fff;">
+        <h2 class="heading">सर्विसेज एवं रेट लिस्ट</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Hair Care</h3>
+                <div class="service-item"><span>हेयर कट</span> <span>₹250 से शुरू</span></div>
+                <div class="service-item"><span>हेयर स्पा</span> <span>₹800</span></div>
+                <div class="service-item"><span>स्मूथनिंग</span> <span>₹2500 से शुरू</span></div>
+            </div>
+            <div class="service-card">
+                <h3>Skin & Facial</h3>
+                <div class="service-item"><span>क्लीन-अप</span> <span>₹400</span></div>
+                <div class="service-item"><span>हर्बल फेशियल</span> <span>₹1200</span></div>
+                <div class="service-item"><span>डी-टैन पैक</span> <span>₹350</span></div>
+            </div>
+            <div class="service-card">
+                <h3>Makeup</h3>
+                <div class="service-item"><span>पार्टी मेकअप</span> <span>₹1500 से शुरू</span></div>
+                <div class="service-item"><span>HD ब्राइडल मेकअप</span> <span>₹8000 से शुरू</span></div>
+            </div>
+            <div class="service-card">
+                <h3>Packages</h3>
+                <div class="service-item"><span>Pre-Bridal Package</span> <span>₹5000</span></div>
+                <div class="service-item"><span>Monthly Grooming</span> <span>₹1500</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery with Category Filter -->
+    <section class="section-padding" id="gallery">
+        <h2 class="heading">काम की गैलरी (Work Gallery)</h2>
+
+        <!-- Filter Buttons -->
+        <div class="gallery-filters">
+            <button class="filter-btn active" onclick="filterGallery('All', this)">All</button>
+            <button class="filter-btn" onclick="filterGallery('Hair Care', this)">Hair Care</button>
+            <button class="filter-btn" onclick="filterGallery('Skin & Facial', this)">Skin & Facial</button>
+            <button class="filter-btn" onclick="filterGallery('Makeup', this)">Makeup</button>
+            <button class="filter-btn" onclick="filterGallery('Packages', this)">Packages</button>
+        </div>
+
+        <!-- Admin Control Panel -->
+        <div class="admin-controls" id="adminPanel" style="display: none;">
+            <h3 style="color: #e91e63; margin-bottom: 10px;">एडमिन कंट्रोल: नई फोटो जोड़ें</h3>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <input type="text" id="imgUrl" placeholder="Image URL (इमेज लिंक)" style="flex: 2; padding: 8px;">
+                <input type="text" id="imgTitle" placeholder="फोटो का नाम" style="flex: 1; padding: 8px;">
+                <select id="imgCategory" style="flex: 1; padding: 8px;">
+                    <option value="Hair Care">Hair Care</option>
+                    <option value="Skin & Facial">Skin & Facial</option>
+                    <option value="Makeup">Makeup</option>
+                    <option value="Packages">Packages</option>
+                </select>
+                <button onclick="uploadImage()" style="padding: 8px 15px; background: #e91e63; color: white; border: none; cursor: pointer; font-weight: bold;">अपलोड करें</button>
+            </div>
+        </div>
+
+        <div style="text-align: right; margin-bottom: 15px;">
+            <button onclick="toggleAdminLogin()" id="adminLoginBtn" style="background: none; border: none; color: #888; cursor: pointer; font-size: 12px;">Admin Login</button>
+        </div>
+
+        <!-- Gallery Container -->
+        <div class="gallery-grid" id="galleryContainer">
+            <!-- Dynamic Images will load here -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ग्लैम और ग्लो पार्लर</h3>
+                <p>आपका विश्वास, हमारी सेवा।</p>
+            </div>
+            <div class="footer-section">
+                <h3>टाइमिंग</h3>
+                <p>सोम - रवि: 09:30 AM से 08:00 PM</p>
+            </div>
+            <div class="footer-section">
+                <h3>संपर्क व मैप</h3>
+                <p>पता: मुख्य बाजार, उत्तर प्रदेश</p>
+                <a href="https://maps.google.com" target="_blank" style="color: #ff4081;">Google Maps नेविगेशन 🗺️</a>
+            </div>
+        </div>
+        <p style="text-align: center; border-top: 1px solid #444; padding-top: 15px; margin-top:20px;">&copy; 2026 Glam & Glow Beauty Parlour.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
